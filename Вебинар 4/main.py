@@ -1,3 +1,16 @@
 msc_price = 13_000
 spb_price = 10_000
-ekb_price = 8_000 # Можно добавить _ в числе и python будет это игнорировать
+ekb_price = 8_000  # Можно добавить _ в числе и python будет это игнорировать
+
+dist = input("Введите пункт назначения (msc, spb, ekb): ")
+count = int(input("Введите количество людей: "))
+
+if dist == "msc":
+    price = msc_price * count
+elif dist == "spb":
+    price = spb_price * count
+elif dist == "ekb":
+    price = ekb_price * count
+
+print(f"Итоговая цена: {price}")
+
