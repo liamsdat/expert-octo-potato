@@ -7,11 +7,13 @@ adults = int(input("Введите количество взрослых: "))
 kids = int(input("Введите количество детей: "))
 
 if dist == "msc":
-    price = msc_price * (2 * adults + kids) // 2
+    dist_price = msc_price
 elif dist == "spb":
-    price = spb_price * (2 * adults + kids) // 2
+    dist_price = spb_price
 elif dist == "ekb":
-    price = ekb_price * (2 * adults + kids) // 2
+    dist_price = ekb_price
 
-print("Цена поездки: ", price)
+total = dist_price * (2 * adults + kids) // 2
+
+print("Цена поездки: ", total)
 
